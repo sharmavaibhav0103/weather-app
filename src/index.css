@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App{
+  height: 100vh;
+  width: 100vw;
+  background-image: url('https://weatherstack.com/site_images/mountains.svg'),linear-gradient(135deg,#1f4e69 0,#164058 100%);;
+  background-size: cover;
+  background-position: center;
+}
+.hero-image{
+  width: 200px;
+  height: 200px;
+}
+.hero-heading{
+  color: azure;
+  padding: 0;
+}
+
+.outer-div {
+  position: absolute;
+  top: 0;
+  margin-left: 30%;
+  margin-top: 20px;
+}
+.form-div > input,button{
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-div > input{
+  height: 5vh;
+  padding: 20px;
+  width: 270px;
+  font-weight: bold;
+}
+.form-div > button > i{
+  font-size: 20px;
+}
+.data-div{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  color: whitesmoke;
+  width: 500px;
+  padding: 10px;
+  margin-left: 10%;
+  padding-right: 20px;
+}
+.data-div > *{
+  padding: 10px;
+}
+.data-div > h3{
+  font-size: 30px;
+}
+.data-div > h4{
+  font-size: 20px;
+}
